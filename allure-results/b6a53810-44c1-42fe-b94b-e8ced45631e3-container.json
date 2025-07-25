@@ -1,0 +1,1 @@
+{"uuid":"b6a53810-44c1-42fe-b94b-e8ced45631e3","name":"softwareAutomationDummy","children":["01a4500f-978a-4a6e-92d0-5ca55ece4216"],"befores":[{"name":"startBrowser","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1753353636760,"stop":1753353663216}],"afters":[],"start":1753353636723,"stop":1753353693160}

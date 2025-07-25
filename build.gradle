@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation("org.seleniumhq.selenium:selenium-java:4.16.1")
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation("org.testng:testng:7.11.0")
+    // https://mvnrepository.com/artifact/io.qameta.allure/allure-testng
+    implementation("io.qameta.allure:allure-testng:2.29.1")
+    // https://mvnrepository.com/artifact/com.aventstack/extentreports
+    implementation("com.aventstack:extentreports:5.0.9")
+
+
+// --run the command to run and generate report
+    //            ./gradlew clean test
+
+}
+
+test {
+    useTestNG(){
+        suites "./src/test/resources/darazRegrationSuite.xml";
+    }
+}

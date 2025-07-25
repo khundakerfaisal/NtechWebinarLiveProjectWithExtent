@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Jul 25 01:40:42 BDT 2025","Fri Jul 25 01:40:45 BDT 2025","3625","Daraz Product Order","Login Successfully","TestRunner.LoginTestRunner","TestRunner.LoginTestRunner","doLoginWithValidCred","Login With Valid Credential",""
+"passed","Fri Jul 25 01:40:55 BDT 2025","Fri Jul 25 01:41:01 BDT 2025","5944","Daraz Product Order","Product order Successfully","TestRunner.orderTestRunner","TestRunner.orderTestRunner","doOrderCreation","Search product successfully",""
+"passed","Fri Jul 25 01:41:04 BDT 2025","Fri Jul 25 01:41:11 BDT 2025","7202","Daraz Product Order","Product order Successfully","TestRunner.orderTestRunner","TestRunner.orderTestRunner","doAddToCartSelect","Product Add to Cart successfully",""
+"broken","Thu Jul 24 18:31:32 BDT 2025","Thu Jul 24 18:31:32 BDT 2025","10","Default Suite","softwareAutomationDummy","TestRunner.orderTestRunner","TestRunner.orderTestRunner","startBrowser","startBrowser",""
+"passed","Fri Jul 25 01:41:01 BDT 2025","Fri Jul 25 01:41:04 BDT 2025","2871","Daraz Product Order","Product order Successfully","TestRunner.orderTestRunner","TestRunner.orderTestRunner","doProductSelect","product select successfully",""
+"passed","Fri Jul 25 01:40:51 BDT 2025","Fri Jul 25 01:40:55 BDT 2025","3945","Daraz Product Order","Product order Successfully","TestRunner.orderTestRunner","TestRunner.orderTestRunner","doLoginWithValidCred","Login Successfully Before Order",""
