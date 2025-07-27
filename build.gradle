@@ -18,6 +18,7 @@ dependencies {
     implementation("io.qameta.allure:allure-testng:2.29.1")
     // https://mvnrepository.com/artifact/com.aventstack/extentreports
     implementation("com.aventstack:extentreports:5.0.9")
+    implementation 'commons-io:commons-io:2.15.1' // or latest versio
 
 
 // --run the command to run and generate report

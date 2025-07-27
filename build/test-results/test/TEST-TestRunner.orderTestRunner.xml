@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestRunner.orderTestRunner" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-25T11:37:20" hostname="FAISAL-AWAL18" time="29.152">
+<testsuite name="TestRunner.orderTestRunner" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-07-27T11:49:59" hostname="FAISAL-AWAL18" time="31.641">
   <properties/>
-  <testcase name="doLoginWithValidCred" classname="TestRunner.orderTestRunner" time="7.952"/>
-  <testcase name="doOrderCreation" classname="TestRunner.orderTestRunner" time="7.056"/>
-  <testcase name="doProductSelect" classname="TestRunner.orderTestRunner" time="4.443"/>
-  <testcase name="doAddToCartSelect" classname="TestRunner.orderTestRunner" time="9.693"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="doLoginWithValidCred" classname="TestRunner.orderTestRunner" time="6.444"/>
+  <testcase name="doOrderCreation" classname="TestRunner.orderTestRunner" time="7.972"/>
+  <testcase name="doProductSelect" classname="TestRunner.orderTestRunner" time="8.479"/>
+  <testcase name="doAddToCartSelect" classname="TestRunner.orderTestRunner" time="8.739"/>
+  <system-out><![CDATA[reports/screenshots10015.png
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

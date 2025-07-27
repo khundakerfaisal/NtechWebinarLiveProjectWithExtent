@@ -40,7 +40,7 @@ public class AddToCart {
     public void AddToCartPage(WebDriver driver, com.aventstack.extentreports.ExtentTest node) throws InterruptedException, IOException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         node.info("Scrolling down the page");
-        js.executeScript("window.scrollBy(0,400)"); // Scroll down by 600 pixels
+        js.executeScript("window.scrollBy(0,50)"); // Scroll down by 600 pixels
         Thread.sleep(500);
         node.info("Clicking Add to Cart button");
         addToCartButton.get(1).click();
