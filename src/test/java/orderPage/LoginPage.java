@@ -60,14 +60,31 @@ public class LoginPage {
 //         MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
 
         // Take screenshot without base64
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File srcFilePath = ts.getScreenshotAs(OutputType.FILE);
-        String screenShotPath = "reports/screenshots" + generateAutoNumber + ".png";
-        System.out.println(screenShotPath);
-        File destFile = new File(screenShotPath);
+
+
+//        File screenShotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//        Random rand = new Random();
+//        int autoNumber = rand.nextInt(99999999) + 10000000;
+//        String filePath = "reports/screenshots/"+"screenshot_" + autoNumber + ".png";
+//        File destFile = new File(filePath);
+//        FileUtils.copyFile(screenShotFile, destFile);
+//        String relativePath = "screenshots/" + filePath;
+
+
+
+
+//        TakesScreenshot ts = (TakesScreenshot) driver;
+        File srcFilePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String screenshotDir = "reports/screenshots/";
+        new File(screenshotDir).mkdirs(); // Ensure directory exists
+        String filename = "screenshot_" + generateAutoNumber + ".png";
+        String fullScreenshotPath = screenshotDir + filename;
+        File destFile = new File(fullScreenshotPath);
         FileUtils.copyFile(srcFilePath, destFile);
+// Use RELATIVE path from HTML file (ExtentReport.html is in /reports/)
+        String relativePath = "screenshots/" + filename;
         node.pass("Login process completed",
-        MediaEntityBuilder.createScreenCaptureFromPath(screenShotPath).build());
+                MediaEntityBuilder.createScreenCaptureFromPath(relativePath).build());
     }
 
 
