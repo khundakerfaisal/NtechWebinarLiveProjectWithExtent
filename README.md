@@ -18,4 +18,5 @@ in cart and place the order Here We have create  suite and generate test case wi
 
 ## Extent Reports
 <img width="1898" height="949" alt="image" src="https://github.com/user-attachments/assets/4601ff15-3b57-4487-801a-118e673dc626" />
-<img width="1912" height="954" alt="image" src="https://github.com/user-attachments/assets/990f1c3c-3999-4aa8-9776-1e5945bbad9c" />
+<img width="1899" height="950" alt="image" src="https://github.com/user-attachments/assets/6649efa0-ea27-4f97-9c5a-53d445b66ac2" />
+
