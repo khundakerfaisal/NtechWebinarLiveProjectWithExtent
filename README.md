@@ -1,4 +1,19 @@
+## Web Automation on CCL ERP Project Using Test NG
+## Prerequisite
+- Install jdk-17.0.8
+- Selenium Webdriver
+- TestNG Framework
+- Gradle 8.5
+- Install Intellij IDEA community Edition
+- Extent 5.0.9
+## About this project
+This is Daraz E-commerce Project.Here user can search the particular product and added the product
+in cart and place the order Here We have create  suite and generate test case wise report using Extent report.
 
+## How to run this project
+- Clone this project:```https://github.com/khundakerfaisal/NtechWebinarLiveProjectWithExtent```
+- Add dependencies in build.gradle file
+- Hit the following command into the terminal smoke suite: ```./gradlew clean test ```
 
 
 ## Extent Reports
