@@ -19,7 +19,11 @@ public class orderTestRunner extends Setup {
         test = extent.createTest("Order Test Suite"); // Parent test
         ExtentTest node = test.createNode("Login Successfully Before Order"); // Child node
         LoginPage loginPage=new LoginPage(driver);
-        loginPage.loginEntryPage(driver, node);
+        String username=System.getProperty("username");
+        String password=System.getProperty("password");
+
+        loginPage.loginEntryPage(username,password,driver, node);
+//        loginPage.loginEntryPage(driver, node);
         Thread.sleep(1000);
 
     }

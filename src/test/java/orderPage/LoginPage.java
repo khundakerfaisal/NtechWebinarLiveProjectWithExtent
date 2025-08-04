@@ -37,15 +37,17 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void loginEntryPage(WebDriver driver, com.aventstack.extentreports.ExtentTest node) throws InterruptedException, IOException {
+    public void loginEntryPage(String username,String password,WebDriver driver, com.aventstack.extentreports.ExtentTest node) throws InterruptedException, IOException {
         node.info("Clicking on Login header");
         loginHeader.click();
         Thread.sleep(1000);
         node.info("Entering username");
-        txtEnterUsername.get(0).sendKeys("01787671357");
+//        txtEnterUsername.get(0).sendKeys("01787671357");
+        txtEnterUsername.get(0).sendKeys(username);
         Thread.sleep(1000);
         node.info("Entering password");
-        txtEnterPassword.get(1).sendKeys("Abc@1234");
+//        txtEnterPassword.get(1).sendKeys("Abc@1234");
+        txtEnterPassword.get(1).sendKeys(password);
         Thread.sleep(1000);
         node.info("Clicking on Login button");
         loginButton.get(0).click();
@@ -62,18 +64,9 @@ public class LoginPage {
         // Take screenshot without base64
 
 
-//        File screenShotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//        Random rand = new Random();
-//        int autoNumber = rand.nextInt(99999999) + 10000000;
-//        String filePath = "reports/screenshots/"+"screenshot_" + autoNumber + ".png";
-//        File destFile = new File(filePath);
-//        FileUtils.copyFile(screenShotFile, destFile);
-//        String relativePath = "screenshots/" + filePath;
 
 
-
-
-//        TakesScreenshot ts = (TakesScreenshot) driver;
+        TakesScreenshot ts = (TakesScreenshot) driver;
         File srcFilePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String screenshotDir = "reports/screenshots/";
         new File(screenshotDir).mkdirs(); // Ensure directory exists

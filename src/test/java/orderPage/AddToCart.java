@@ -1,5 +1,7 @@
 package orderPage;
 
+import io.opentelemetry.api.internal.Utils;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,13 +11,16 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 import static Config.Setup.test;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import com.aventstack.extentreports.MediaEntityBuilder;
+
 import java.io.IOException;
+import java.util.Random;
 
 public class AddToCart {
     @FindBy(className = "add-to-cart-buy-now-btn")
@@ -68,10 +73,12 @@ public class AddToCart {
         Thread.sleep(1000);
         node.pass("Added cart successfully");
 
-        // Take screenshot
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
-        node.pass("Cart page screenshot",
-            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+        // Take screenshot of the cart page
+        Screenshot screenshotUtil = new Screenshot();
+        screenshotUtil.getScreenShot(driver, node, "Cart page screenshot successfully attached");
+
+
+
+
     }
 }

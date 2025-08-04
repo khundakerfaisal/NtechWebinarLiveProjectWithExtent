@@ -23,11 +23,23 @@ dependencies {
 
 // --run the command to run and generate report
     //            ./gradlew clean test
-
 }
 
 test {
-    useTestNG(){
-        suites "./src/test/resources/darazRegrationSuite.xml";
+    useTestNG() {
+        if (project.hasProperty("username") && project.hasProperty("password")) {
+            systemProperties.put("username", project.property("username"));
+            systemProperties.put("password", project.property("password"));
+        }
+        if (project.hasProperty("suiteName")) {
+            systemProperties.put("suiteName", project.property("suiteName"))
+        }
+        suites "./src/test/resources/" + systemProperties.get("suiteName")
+
+
+//                suites "./src/test/resources/darazRegrationSuite.xml";
+//        suites "./src/test/resources/regretionSuite.xml";
+
+
     }
 }

@@ -31,9 +31,9 @@ public class SelectItem {
         Thread.sleep(1500);
 
         // Take screenshot
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
-        node.pass("Item selected",
-            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+
+        Screenshot screenshotUtil = new Screenshot();
+        screenshotUtil.getScreenShot(driver, node, "Item selected screenshot successfully attached");
+
     }
 }

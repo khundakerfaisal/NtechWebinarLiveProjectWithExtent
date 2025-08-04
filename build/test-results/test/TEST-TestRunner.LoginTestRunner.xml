@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestRunner.LoginTestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-07-27T12:46:50" hostname="FAISAL-AWAL18" time="7.072">
+<testsuite name="TestRunner.LoginTestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-04T12:49:56" hostname="FAISAL-AWAL18" time="7.666">
   <properties/>
-  <testcase name="doLoginWithValidCred" classname="TestRunner.LoginTestRunner" time="7.072"/>
+  <testcase name="doLoginWithValidCred" classname="TestRunner.LoginTestRunner" time="7.666"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

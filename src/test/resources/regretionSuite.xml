@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Login Suite">
+    <test name="Login Successfully">
+        <classes>
+            <class name="TestRunner.LoginTestRunner"></class>
+        </classes>
+    </test>
+    <test name="Product order Successfully">
+        <classes>
+            <class name="TestRunner.orderTestRunner"></class>
+        </classes>
+    </test>
+</suite>

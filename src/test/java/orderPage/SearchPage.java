@@ -39,10 +39,13 @@ public class SearchPage {
         Thread.sleep(1000);
 
         // Take screenshot
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
-        node.pass("Search completed",
-            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+                //        TakesScreenshot ts = (TakesScreenshot) driver;
+                //        String base64Screenshot = ts.getScreenshotAs(OutputType.BASE64);
+                //        node.pass("Search completed",
+                //            MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).build());
+        Screenshot screenshotUtil = new Screenshot();
+        screenshotUtil.getScreenShot(driver, node, "Search completed screenshot successfully attached");
+
     }
 
 
