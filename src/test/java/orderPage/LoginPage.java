@@ -42,12 +42,12 @@ public class LoginPage {
         loginHeader.click();
         Thread.sleep(1000);
         node.info("Entering username");
-//        txtEnterUsername.get(0).sendKeys("01787671357");
-        txtEnterUsername.get(0).sendKeys(username);
+        txtEnterUsername.get(0).sendKeys("01787671357");
+//        txtEnterUsername.get(0).sendKeys(username);
         Thread.sleep(1000);
         node.info("Entering password");
-//        txtEnterPassword.get(1).sendKeys("Abc@1234");
-        txtEnterPassword.get(1).sendKeys(password);
+        txtEnterPassword.get(1).sendKeys("Abc@1234");
+//        txtEnterPassword.get(1).sendKeys(password);
         Thread.sleep(1000);
         node.info("Clicking on Login button");
         loginButton.get(0).click();
